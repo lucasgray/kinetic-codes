@@ -100,7 +100,7 @@ export default function Home() {
             />
           </h1>
           <p className="text-xl md:text-2xl text-muted max-w-2xl mb-10">
-            Kinetic Code helps startups and scale-ups build reliable systems and
+            Kinetic Codes helps startups and scale-ups build reliable systems and
             high-performing engineering teams. Based in Madison, WI.
           </p>
           <div className="flex flex-row gap-4">
@@ -255,15 +255,15 @@ export default function Home() {
         </AnimatedSection>
 
         {/* Footer */}
-        <footer className="py-12 px-6 border-t border-muted/10">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        <footer className="py-16 px-6 bg-black/30 border-t border-cyan-900/50">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
             <p className="text-muted text-sm">
               © {new Date().getFullYear()} Kinetic.codes. All rights reserved.
             </p>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-8">
               <a
                 href="mailto:hello@kinetic.codes"
-                className="text-muted hover:text-neon-cyan transition-colors"
+                className="text-neon-cyan/70 hover:text-neon-cyan hover:drop-shadow-[0_0_8px_rgba(0,255,255,0.5)] transition-all"
               >
                 Email
               </a>
@@ -271,7 +271,7 @@ export default function Home() {
                 href="https://github.com/lucasgray"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted hover:text-neon-cyan transition-colors"
+                className="text-neon-cyan/70 hover:text-neon-cyan hover:drop-shadow-[0_0_8px_rgba(0,255,255,0.5)] transition-all"
               >
                 GitHub
               </a>
@@ -279,7 +279,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/lucas-gray-6169403/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted hover:text-neon-cyan transition-colors"
+                className="text-neon-cyan/70 hover:text-neon-cyan hover:drop-shadow-[0_0_8px_rgba(0,255,255,0.5)] transition-all"
               >
                 LinkedIn
               </a>
@@ -287,7 +287,7 @@ export default function Home() {
                 href="https://lucasegray.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted hover:text-neon-cyan transition-colors"
+                className="text-neon-cyan/70 hover:text-neon-cyan hover:drop-shadow-[0_0_8px_rgba(0,255,255,0.5)] transition-all"
               >
                 Blog
               </a>
