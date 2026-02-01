@@ -34,11 +34,11 @@ const engagements = [
   {
     title: "Engineering Team Scale-up",
     challenge:
-      "Startup growing from 2 to 12 engineers with no defined processes and a messy codebase",
+      "Startup growing from 2 to 12 engineers with no defined processes or system architecture",
     solution:
-      "Established ways of working, PR review process, QA, system architecture, and software delivery process",
+      "Established ways of working, PR review process, QA, robust asynchronous processing, and software delivery process",
     impact:
-      "Company scaled to 8-figure ARR, 100% engineer retention, and sustained code quality at scale",
+      "Company scaled to 8-figure ARR, 100% engineer retention, and sustained quality at scale",
   },
   {
     title: "Immersive Digital Experience",
@@ -63,16 +63,16 @@ const engagements = [
 const testimonials = [
   {
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lucas joined us when we were a scrappy team of three engineers with big ambitions but no real process. Within six months, he'd helped us build out a robust CI/CD pipeline, establish code review practices that actually stuck, and architect a system that could handle 10x our traffic. More importantly, he mentored our junior devs in a way that made them genuinely better engineers. When he eventually rolled off, we had a team that could stand on its own.",
     name: "Jane Smith",
     role: "CTO",
     company: "TechCorp",
   },
   {
     quote:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "When Lucas came on board, we had a product held together by duct tape and caffeine. He didn't just write software, he built the foundation that let us scale without losing our velocity or culture. The processes he put in place meant we never lost a single engineer to burnout or frustration, even as we grew to 8-figure ARR. I've worked with a lot of technical leaders, but Lucas is the rare one who can see both the architecture and the people.",
     name: "Michael Chen",
-    role: "VP Engineering",
+    role: "CEO",
     company: "StartupCo",
   },
   {
@@ -95,7 +95,7 @@ export default function Home() {
           className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl">
             <TypewriterText
-              text="Technical Leader. Software Craftsman. Problem Solver."
+              text="Technical Leadership, Software Craftsmanship."
               className="text-glow-cyan"
             />
           </h1>
@@ -144,7 +144,7 @@ export default function Home() {
                 <p className="text-lg text-background/70 leading-relaxed mb-6">
                   With almost 20 years building software products and leading engineering
                   teams, I bring deep technical expertise and practical leadership to
-                  complex challenges. I specialize in system architecture, rapid prototyping,
+                  complex challenges. I specialize in system architecture, team building,
                   and 0-to-1 scaling.
                 </p>
                 <p className="text-lg text-background/70 leading-relaxed">
@@ -213,7 +213,7 @@ export default function Home() {
               Why Kinetic?
             </h2>
             <p className="text-lg md:text-xl text-foreground leading-relaxed mb-8">
-              Code in motion. Always evolving, never static. Building systems that anticipate change. Every ounce of
+              Always in motion. Building systems that anticipate change. Every ounce of
               energy directed towards the right solve, the first time.
             </p>
             <p className="text-xl md:text-2xl font-semibold text-neon-cyan border-t border-cyan-700/50 pt-6 mt-6">
@@ -242,7 +242,7 @@ export default function Home() {
 
         {/* Contact Section */}
         <AnimatedSection id="contact"
-                         className="py-24 px-6 border-y border-muted/20">
+                         className="py-24 px-6">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
               Let&apos;s Talk
