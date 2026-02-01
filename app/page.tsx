@@ -88,7 +88,7 @@ export default function Home() {
         <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl">
             <TypewriterText
-              text="Technical Leader. Problem Solver. Optimizer."
+              text="Technical Leader. Problem Solver. Software Craftsman."
               className="text-glow-cyan"
             />
           </h1>

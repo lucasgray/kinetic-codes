@@ -52,16 +52,25 @@ export default function TypewriterText({
       {text.split("").map((char, index) => (
         <span
           key={index}
-          className={index < visibleCount ? "opacity-100" : "opacity-0"}
+          className={`relative ${index < visibleCount ? "opacity-100" : "opacity-0"}`}
         >
           {char}
+          {index === visibleCount - 1 && (
+            <span
+              className={`absolute left-full top-0 w-[3px] h-[1em] bg-neon-cyan transition-opacity ${
+                showCursor ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          )}
         </span>
       ))}
-      <span
-        className={`inline-block w-[3px] h-[1em] bg-neon-cyan ml-1 align-middle transition-opacity ${
-          showCursor ? "opacity-100" : "opacity-0"
-        }`}
-      />
+      {visibleCount === 0 && (
+        <span
+          className={`inline-block w-[3px] h-[1em] bg-neon-cyan transition-opacity ${
+            showCursor ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      )}
     </span>
   );
 }
