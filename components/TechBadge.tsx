@@ -21,8 +21,8 @@ export default function TechBadge({ name, index }: TechBadgeProps) {
       whileHover={{
         scale: 1.05,
         boxShadow: "0 0 12px rgba(255, 0, 255, 0.45)",
+        transition: { duration: 0.15 },
       }}
-      transition={{ duration: 0.15 }}
       className="inline-block px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg font-mono text-sm text-gray-800 cursor-default"
     >
       {name}
