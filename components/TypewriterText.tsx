@@ -28,7 +28,7 @@ export default function TypewriterText({
     if (!started || visibleCount >= text.length) return;
 
     const currentChar = text[visibleCount - 1];
-    const isPause = currentChar === "." || currentChar === "!" || currentChar === "?";
+    const isPause = currentChar === "." || currentChar === "!" || currentChar === "?" || currentChar === ",";
 
     const timeout = setTimeout(
       () => {

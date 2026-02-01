@@ -225,7 +225,7 @@ export default function Home() {
         {/* Testimonials Section */}
         <AnimatedSection
           className="py-24 px-6 bg-white text-background border-y border-gray-300 shadow-[inset_0_15px_20px_-15px_rgba(0,0,0,0.35),inset_0_-15px_20px_-15px_rgba(0,0,0,0.35)]">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
               What People Say
             </h2>
