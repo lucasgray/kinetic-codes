@@ -6,6 +6,12 @@ import { z } from "zod";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email"),
@@ -47,6 +53,14 @@ export default function ContactForm() {
 
       setStatus("success");
       reset();
+
+      // Fire GA4 conversion event
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "contact_form_submit", {
+          event_category: "engagement",
+          event_label: "Contact Form",
+        });
+      }
     } catch {
       setStatus("error");
       setErrorMessage("Something went wrong. Please try again or email directly.");
