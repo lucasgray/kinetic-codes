@@ -93,15 +93,15 @@ export default function Home() {
         {/* Hero Section */}
         <section
           className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl leading-tight">
             <TypewriterText
-              text="Technical Leadership, Software Craftsmanship."
+              text="Technical Leadership, Software Craftsmanship"
               className="text-glow-cyan"
             />
           </h1>
           <p className="text-xl md:text-2xl text-muted max-w-2xl mb-10">
             Kinetic Codes helps startups and scale-ups build reliable systems and
-            high-performing engineering teams. Based in Madison, WI.
+            high-performing engineering teams.
           </p>
           <div className="flex flex-row gap-4">
             <a
@@ -116,7 +116,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="px-8 py-4 bg-neon-magenta/20 text-neon-magenta font-bold rounded-lg hover:bg-neon-magenta/40 transition-all duration-150"
             >
-              View Calendar
+              Book My Calendar
             </a>
           </div>
         </section>
@@ -125,11 +125,11 @@ export default function Home() {
         <AnimatedSection
           className="py-24 px-6 bg-white text-background border-y border-gray-300 shadow-[inset_0_15px_20px_-15px_rgba(0,0,0,0.35),inset_0_-15px_20px_-15px_rgba(0,0,0,0.35)]">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              About
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center md:hidden">
+              About Me
             </h2>
-            <div className="grid md:grid-cols-[auto_1fr] gap-12 items-center mb-12 max-w-3xl mx-auto">
-              <div className="flex justify-center">
+            <div className="grid md:grid-cols-[auto_1fr] gap-12 md:justify-center mb-12 max-w-3xl mx-auto">
+              <div className="flex justify-center md:mt-24">
                 <div className="w-56 h-56 relative rounded-full overflow-hidden shadow-lg">
                   <Image
                     src="/lucas-color-pop.jpg"
@@ -140,16 +140,22 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div>
+              <div className="flex flex-col">
+                <h2 className="hidden md:block text-3xl md:text-4xl font-bold mb-6">
+                  About Me
+                </h2>
                 <p className="text-lg text-background/70 leading-relaxed mb-6">
                   With almost 20 years building software products and leading engineering
                   teams, I bring deep technical expertise and practical leadership to
                   complex challenges. I specialize in system architecture, team building,
                   and 0-to-1 scaling.
                 </p>
-                <p className="text-lg text-background/70 leading-relaxed">
+                <p className="text-lg text-background/70 leading-relaxed mb-6">
                   I work as a player-coach team lead, fractional principal engineer, or technical advisor—embedded
                   with your team for as long as you need.
+                </p>
+                <p className="text-lg text-background/70 leading-relaxed">
+                  Based in Madison, WI 🦡
                 </p>
               </div>
             </div>
@@ -175,7 +181,7 @@ export default function Home() {
 
         {/* Engagements Section */}
         <AnimatedSection
-          className="py-24 px-6 border-t border-muted/20">
+          className="py-24 px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
               Engagement Examples
@@ -193,7 +199,7 @@ export default function Home() {
 
         {/* Why Kinetic Section */}
         <AnimatedSection
-          className="py-32 px-6 relative overflow-hidden bg-gradient-to-b from-cyan-950 via-cyan-900 to-cyan-950 border-y border-cyan-800">
+          className="py-32 px-6 relative overflow-hidden bg-gradient-to-b from-cyan-950 via-cyan-900 to-cyan-950 border-y border-cyan-800 shadow-[0_15px_20px_-15px_rgba(0,0,0,0.35)]">
           {/* Hexagon pattern overlay */}
           <svg className="absolute inset-0 w-full h-full opacity-10" preserveAspectRatio="xMidYMid slice">
             <defs>
@@ -223,9 +229,10 @@ export default function Home() {
         </AnimatedSection>
 
         {/* Testimonials Section */}
-        <AnimatedSection
-          className="py-24 px-6 bg-white text-background border-y border-gray-300 shadow-[inset_0_15px_20px_-15px_rgba(0,0,0,0.35),inset_0_-15px_20px_-15px_rgba(0,0,0,0.35)]">
-          <div className="max-w-6xl mx-auto">
+        <div className="bg-white">
+          <AnimatedSection
+            className="py-24 px-6 text-background border-y border-gray-300 shadow-[inset_0_-15px_20px_-15px_rgba(0,0,0,0.35)]">
+            <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
               What People Say
             </h2>
@@ -239,6 +246,7 @@ export default function Home() {
             </div>
           </div>
         </AnimatedSection>
+        </div>
 
         {/* Contact Section */}
         <AnimatedSection id="contact"
