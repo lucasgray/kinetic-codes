@@ -30,8 +30,8 @@ export default function EngagementCard({
       whileHover={{
         y: -5,
         boxShadow: "0 0 25px rgba(255, 0, 255, 0.45)",
+        transition: { duration: 0.15 },
       }}
-      transition={{ duration: 0.15 }}
       className="p-6 bg-background border border-neon-magenta/30 rounded-xl"
     >
       <h3 className="text-xl font-bold text-foreground mb-4 h-7">{title}</h3>
