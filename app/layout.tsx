@@ -13,37 +13,87 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kinetic.codes | Principal Engineer & Technical Leader",
+  title: "Lucas Gray | Software Consultant in Madison, WI | Kinetic.codes",
   description:
-    "I help startups and scale-ups build reliable systems and high-performing engineering teams. Principal engineer and technical leader available for contract work.",
+    "Independent software consultant in Madison, Wisconsin. Fractional CTO, technical leadership, system architecture, and 0-to-1 product development. Almost 20 years experience.",
   keywords: [
+    "software consultant madison wi",
+    "software consultant madison wisconsin",
+    "fractional cto madison",
+    "technical consultant wisconsin",
+    "software development madison",
     "principal engineer",
     "technical leader",
-    "contractor",
-    "consultant",
-    "software engineer",
-    "distributed systems",
-    "engineering leadership",
+    "software contractor madison",
+    "freelance developer madison wi",
+    "startup consultant wisconsin",
   ],
   authors: [{ name: "Lucas Gray" }],
   openGraph: {
-    title: "Kinetic.codes | Principal Engineer & Technical Leader",
+    title: "Lucas Gray | Software Consultant in Madison, WI",
     description:
-      "I help startups and scale-ups build reliable systems and high-performing engineering teams.",
+      "Independent software consultant in Madison, Wisconsin. Fractional CTO, technical leadership, and product development.",
     url: "https://kinetic.codes",
     siteName: "Kinetic.codes",
     type: "website",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kinetic.codes | Principal Engineer & Technical Leader",
+    title: "Lucas Gray | Software Consultant in Madison, WI",
     description:
-      "I help startups and scale-ups build reliable systems and high-performing engineering teams.",
+      "Independent software consultant in Madison, Wisconsin. Fractional CTO, technical leadership, and product development.",
   },
   robots: {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: "https://kinetic.codes",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Kinetic.codes - Lucas Gray",
+  description:
+    "Independent software consultant specializing in fractional CTO services, technical leadership, system architecture, and product development.",
+  url: "https://kinetic.codes",
+  email: "hello@kinetic.codes",
+  founder: {
+    "@type": "Person",
+    name: "Lucas Gray",
+    jobTitle: "Software Consultant",
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Madison",
+    addressRegion: "WI",
+    addressCountry: "US",
+  },
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Madison",
+      addressRegion: "WI",
+    },
+    {
+      "@type": "State",
+      name: "Wisconsin",
+    },
+    {
+      "@type": "Country",
+      name: "United States",
+    },
+  ],
+  serviceType: [
+    "Software Consulting",
+    "Fractional CTO",
+    "Technical Leadership",
+    "System Architecture",
+    "Product Development",
+  ],
 };
 
 export default function RootLayout({
@@ -53,6 +103,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >

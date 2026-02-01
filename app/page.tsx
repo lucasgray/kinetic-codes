@@ -94,7 +94,7 @@ export default function Home() {
           </h1>
           <p className="text-xl md:text-2xl text-muted max-w-2xl mb-10">
             I help startups and scale-ups build reliable systems and
-            high-performing engineering teams.
+            high-performing engineering teams. Based in Madison, WI.
           </p>
           <div className="flex flex-row gap-4">
             <a
