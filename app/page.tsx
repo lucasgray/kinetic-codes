@@ -1,12 +1,18 @@
 "use client";
 
+import Image from "next/image";
+import dynamic from "next/dynamic";
 import AnimatedSection from "@/components/AnimatedSection";
 import TechBadge from "@/components/TechBadge";
 import EngagementCard from "@/components/EngagementCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import ContactForm from "@/components/ContactForm";
-import ParticleBackground from "@/components/ParticleBackground";
 import TypewriterText from "@/components/TypewriterText";
+
+const ParticleBackground = dynamic(
+  () => import("@/components/ParticleBackground"),
+  { ssr: false }
+);
 
 const techStack = [
   "React",
@@ -122,11 +128,15 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-[auto_1fr] gap-12 items-center mb-12 max-w-3xl mx-auto">
             <div className="flex justify-center">
-              <img
-                src="/lucas-color-pop.jpg"
-                alt="Lucas Gray"
-                className="w-56 h-56 md:w-56 md:h-56 rounded-full object-cover shadow-lg"
-              />
+              <div className="w-56 h-56 relative rounded-full overflow-hidden shadow-lg">
+                <Image
+                  src="/lucas-color-pop.jpg"
+                  alt="Lucas Gray"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
             <div>
               <p className="text-lg text-background/70 leading-relaxed mb-6">
