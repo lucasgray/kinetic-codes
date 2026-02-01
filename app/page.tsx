@@ -92,7 +92,7 @@ export default function Home() {
       <main className="relative z-10">
         {/* Hero Section */}
         <section
-          className="relative z-20 min-h-screen flex flex-col items-center justify-center px-6 text-center border-b border-muted/20 shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+          className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl">
             <TypewriterText
               text="Technical Leader. Software Craftsman. Problem Solver."
@@ -123,7 +123,7 @@ export default function Home() {
 
         {/* About Section */}
         <AnimatedSection
-          className="py-24 px-6 bg-white text-background border-y border-gray-300 shadow-[inset_0_-20px_30px_-20px_rgba(0,0,0,0.2)]">
+          className="py-24 px-6 bg-white text-background border-y border-gray-300 shadow-[inset_0_15px_20px_-15px_rgba(0,0,0,0.35),inset_0_-15px_20px_-15px_rgba(0,0,0,0.35)]">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
               About
@@ -175,7 +175,7 @@ export default function Home() {
 
         {/* Engagements Section */}
         <AnimatedSection
-          className="py-24 px-6 bg-foreground/[0.02] border-y border-muted/20 shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+          className="py-24 px-6 border-t border-muted/20">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
               Engagement Examples
@@ -193,7 +193,7 @@ export default function Home() {
 
         {/* Why Kinetic Section */}
         <AnimatedSection
-          className="py-32 px-6 relative overflow-hidden bg-gradient-to-b from-cyan-950 via-cyan-900 to-cyan-950 border-y border-cyan-800 shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+          className="py-32 px-6 relative overflow-hidden bg-gradient-to-b from-cyan-950 via-cyan-900 to-cyan-950 border-y border-cyan-800">
           {/* Hexagon pattern overlay */}
           <svg className="absolute inset-0 w-full h-full opacity-10" preserveAspectRatio="xMidYMid slice">
             <defs>
@@ -224,7 +224,7 @@ export default function Home() {
 
         {/* Testimonials Section */}
         <AnimatedSection
-          className="py-24 px-6 bg-white text-background border-y border-gray-300 shadow-[inset_0_-20px_30px_-20px_rgba(0,0,0,0.2)]">
+          className="py-24 px-6 bg-white text-background border-y border-gray-300 shadow-[inset_0_15px_20px_-15px_rgba(0,0,0,0.35),inset_0_-15px_20px_-15px_rgba(0,0,0,0.35)]">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
               What People Say
@@ -242,7 +242,7 @@ export default function Home() {
 
         {/* Contact Section */}
         <AnimatedSection id="contact"
-                         className="py-24 px-6 bg-foreground/[0.02] border-y border-muted/20 shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+                         className="py-24 px-6 border-y border-muted/20">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
               Let&apos;s Talk
