@@ -15,8 +15,8 @@ export default function TechBadge({ name, index }: TechBadgeProps) {
       viewport={{ once: true }}
       transition={{
         duration: 0.3,
-        delay: index * 0.1,
-        ease: "easeOut",
+        delay: 0.1,
+        ease: "easeInOut",
       }}
       whileHover={{
         scale: 1.05,
