@@ -129,7 +129,7 @@ export default function Home() {
               About Me
             </h2>
             <div className="grid md:grid-cols-[auto_1fr] gap-12 md:justify-center mb-12 max-w-3xl mx-auto">
-              <div className="flex justify-center md:mt-24">
+              <div className="flex flex-col items-center md:mt-24">
                 <div className="w-56 h-56 relative rounded-full overflow-hidden shadow-lg">
                   <Image
                     src="/lucas-color-pop.jpg"
@@ -138,6 +138,14 @@ export default function Home() {
                     className="object-cover"
                     priority
                   />
+                </div>
+                <div className="-mt-6 rounded overflow-hidden shadow-md border border-red-700 relative z-10 scale-90">
+                  <div className="bg-red-600 px-3 py-0.5">
+                    <p className="text-white text-[8px] font-bold tracking-wider uppercase">Hello, my name is</p>
+                  </div>
+                  <div className="bg-white px-3 py-1.5">
+                    <p className="text-sm font-bold text-gray-800">Lucas Gray</p>
+                  </div>
                 </div>
               </div>
               <div className="flex flex-col">
