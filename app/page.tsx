@@ -34,7 +34,7 @@ const engagements = [
   {
     title: "Engineering Team Scale-up",
     challenge:
-      "Startup growing from 2 to 12 engineers with no defined processes or system architecture",
+      "Nascent telehealth company lacked engineering rigor, needed to balance cleanup from a rushed launch with necessary features",
     solution:
       "Established ways of working, PR review process, QA, robust asynchronous processing, and software delivery process",
     impact:
